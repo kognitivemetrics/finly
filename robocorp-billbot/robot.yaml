@@ -1,0 +1,11 @@
+artifactsDir: output
+condaConfigFile: conda.yaml
+tasks:
+  Scrape Fake AWS Bill:
+    command:
+      - python
+      - -m
+      - robot
+      - --output
+      - output.xml
+      - tasks/robot.robot

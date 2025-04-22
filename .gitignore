@@ -1,0 +1,27 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+
+# Node (React frontend)
+node_modules/
+dist/
+build/
+npm-debug.log
+yarn-error.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Robocorp outputs
+output/
+*.log
+*.xml
+
+# VSCode and IDEs
+.vscode/
+.idea/

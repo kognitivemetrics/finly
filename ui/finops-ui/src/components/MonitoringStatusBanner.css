@@ -1,0 +1,39 @@
+.status-banner {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 12px 0;
+    animation: glow-pulse 2s infinite ease-in-out;
+    background: linear-gradient(to right, #f0fdf4, #d1fae5);
+    box-shadow: 0 0 12px rgba(0, 255, 140, 0.3);
+  }
+  
+  .status-icon {
+    font-size: 14px;
+    animation: pulse-dot 1.5s infinite ease-in-out;
+  }
+  
+  .connected .status-icon {
+    color: #22c55e;
+  }
+  
+  .disconnected .status-icon {
+    color: #f87171;
+  }
+  
+  @keyframes pulse-dot {
+    0% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.3); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.8; }
+  }
+  
+  @keyframes glow-pulse {
+    0% { box-shadow: 0 0 8px rgba(0, 255, 140, 0.2); }
+    50% { box-shadow: 0 0 16px rgba(0, 255, 140, 0.4); }
+    100% { box-shadow: 0 0 8px rgba(0, 255, 140, 0.2); }
+  }
+  
