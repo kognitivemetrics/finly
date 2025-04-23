@@ -1,0 +1,5 @@
+artifactsDir: output
+condaConfigFile: conda.yaml
+tasks:
+   DashboardScraper:
+    shell: python -m robot --report NONE --log NONE --output output.xml tasks/robot.robot
